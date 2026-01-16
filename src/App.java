@@ -8,8 +8,15 @@ public class App {
 		System.out.println(sum2D(a)); //should print 30
 	}
 	
-	public static int sum2D(int[][] nums){
-		return -1;
-	}
-	
+	public static int sum2D(int[][] nums) {
+    int sum = 0;
+
+    for (int row = 0; row < nums.length; row++) {
+        for (int col = 0; col < nums[row].length; col++) {
+            sum += nums[row][col];
+        }
+    }
+
+    return sum;
+}
 }
